@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redline</title>
+    <meta name="description" content="Создание эксклюзивных сайтов" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./libs/inputmask.min.js"></script>
+    <script defer src="./libs/typed.min.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <div class="menu__inner container">
+          <a class="logo" href="#">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#about">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#clients">SEO</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#pricing">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#secure">Безопасность</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#projects">Портфлио</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#land">Заказать лендинг</a>
+              </li>
+            </ul>
+          </div>
+          <button class="menu__btn">
+            <img src="./img/icons/icon-phone.svg" alt="" />
+            Бесплатная консультация
+          </button>
+          <button class="menu__burger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="header__socials container">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                <path
+                  d="M20 0C8.963 0 0 8.963 0 20s8.963 20 20 20 20-8.963 20-20S31.037 0 20 0zm0 35.111C11.63 35.111 4.815 28.37 4.815 20A15.21 15.21 0 0 1 20 4.815 15.21 15.21 0 0 1 35.185 20C35.111 28.37 28.37 35.111 20 35.111z"
+                />
+                <path
+                  d="M17.556 22.889c1.407 1.259 3.481 1.259 4.815 0v-5.778c-1.407-1.259-3.482-1.259-4.815 0v5.778zm2.445-13.185c-2.741 0-5.333 1.111-7.259 3.037l3.407 3.407a5.41 5.41 0 0 1 7.704 0l3.407-3.407c-1.926-1.926-4.518-3.037-7.259-3.037z"
+                />
+                <path
+                  d="M23.852 23.852a5.41 5.41 0 0 1-7.704 0l-3.407 3.407c4 4 10.519 4 14.519 0l-3.407-3.407zM19.996 40c.148-2.37-1.259-4.519-3.556-5.259-5.926-1.482-10.37-6.296-11.333-12.296h10.074c-.815-1.556-.815-3.333 0-4.815H5.107c1.334-8.297 9.037-13.852 17.26-12.593a14.83 14.83 0 0 1 5.481 2c2.074 1.259 4.815.741 6.296-1.185-7.778-7.778-20.444-7.778-28.296 0s-7.852 20.444 0 28.296C9.626 37.852 14.663 40 19.996 40z"
+                />
+              </svg>
+            </a>
+            <p class="social__text">- Наш представитель на Freelancehunt</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__capture container">
+        <div class="redline">
+          <div class="redline__logo">
+            <img class="logo__large" src="./img/logo-2.png" alt="logo" />
+          </div>
+          <div class="redline__about">
+            <svg class="icon redline__about--icon-info">
+              <use xlink:href="img/icons/sprite.svg#icon-info"></use>
+            </svg>
+            <p class="redline__about-text">- <span>O Redline</span></p>
+          </div>
+        </div>
+        <div class="callback">
+          <div class="callback__number">
+            <svg class="icon callback__number--icon-mobile">
+              <use xlink:href="img/icons/sprite.svg#icon-mobile"></use>
+            </svg>
+            <a class="callback__number-phone" href="tel:+30732013063">+38 (073) 20-13-063</a>
+          </div>
+          <button class="button__alt">Перезвонить мне</button>
+          <p class="callback__time">
+            Перезвоним завтра <b>в 12:00</b><br />
+            <button class="callback__time-change">изменить время</button>
+          </p>
+        </div>
+      </div>
+
+      <section class="header__hero container">
+        <div class="hero__action">
+          <div class="bonus">
+            <button class="button__bonus">
+              <img src="img/strawberry.png" alt="bonus" />
+            </button>
+            <p class="bonus__text">Нажмите на вкусняшку и получите скидку</p>
+          </div>
+          <a class="button__alt portfolio__btn" href="#projects">
+            <svg class="icon button__alt--icon-case">
+              <use xlink:href="img/icons/sprite.svg#icon-case"></use>
+            </svg>
+            Все портфолио
+          </a>
+        </div>
+
+        <div class="hero__master">
+          <div class="master__content">
+            <h1 class="title master__content-title">
+              <span class="accent">Продающий лендинг</span><br />
+              с уникальным<br />
+              дизайном<br />
+              <span class="content-title__price">от 600$</span>
+              <span class="content-title__calendar">
+                <svg class="content-title--icon-calendar">
+                  <use xlink:href="img/icons/sprite.svg#icon-calendar"></use>
+                </svg>
+                - до 14 дней.
+              </span>
+            </h1>
+            <div class="master__order">
+              <button class="button__prime master__order--btn">
+                Заказать лендинг под ключ
+                <svg class="order--btn-icon">
+                  <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+              <span class="order__text">* Ваши данные никогда и низачто не попадут к третьим или четвертым лицам</span>
+            </div>
+          </div>
+        </div>
+        <figure class="hero__image">
+          <img src="./img/demo.png" alt="" />
+          <figcaption class="hero__image-desc">
+            Ваш сайт будет идеально выглядеть <br />на всех устройствах
+            <img src="./img/arrow.svg" alt="" />
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="header__features container" id="about">
+        <div class="features__head">
+          <h2 class="title features__head-title">
+            Почему именно<br />
+            <span class="accent">мы?</span>
+          </h2>
+          <p class="features__head-desc">
+            <b>
+              Во первых потому что мы создаем действительно класные уникальные сайты, а не просто продаем вам какой-то
+              готовый не качественный шаблон
+            </b>
+          </p>
+        </div>
+        <div class="features__content">
+          <div class="content__indicators">
+            <ul class="indicators__list">
+              <li class="indicators__item">
+                <span class="indicators__item-accent">
+                  <svg class="indicators__item-icon">
+                    <use xlink:href="img/icons/sprite.svg#icon-monitor"></use>
+                  </svg>
+                </span>
+                <p class="indicators__item-text">Ваш сайт отлично отображается на любых устройствах</p>
+              </li>
+              <li class="indicators__item">
+                <span class="indicators__item-accent">
+                  <svg class="indicators__item-icon">
+                    <use xlink:href="img/icons/sprite.svg#icon-dollar"></use>
+                  </svg>
+                </span>
+                <p class="indicators__item-text">Потрясающая окупаемость вашего сайта</p>
+              </li>
+              <li class="indicators__item">
+                <span class="indicators__item-accent">до 300%</span>
+                <p class="indicators__item-text">Рост вашей прибыли с помощью вашего нового сайта</p>
+              </li>
+              <li class="indicators__item">
+                <span class="indicators__item-accent">345+</span>
+                <p class="indicators__item-text">Сайтов<br />сделано</p>
+              </li>
+              <li class="indicators__item">
+                <span class="indicators__item-accent">6</span>
+                <p class="indicators__item-text">Продуктивных<br />лет на рынке</p>
+              </li>
+              <li class="indicators__item">
+                <span class="indicators__item-accent">300+</span>
+                <p class="indicators__item-text">Довольных<br />клиентов</p>
+              </li>
+            </ul>
+            <a class="button__alt indicators__btn" href="#reviews">Посмотреть отзывы и благодарности</a>
+          </div>
+          <div class="content__rocket">
+            <p class="content__rocket-title">
+              Нужно <b>срочно</b><br />
+              запустить проект?
+            </p>
+            <button class="content__rocket-btn">Оформить быструю заявку</button>
+            <span class="content__rocket-desc"
+              >* Вам сразу придет на почту бриф на заполнение и в ближайшее время с вами свяжется наш представитель
+            </span>
+            <img class="content__rocket-image" src="./img/rocket.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="chuck">
+      <h2 class="chuck__title container">
+        Удар по конверсии
+        <span>c разворота!</span>
+      </h2>
+      <div class="chuck__inner">
+        <div class="container">
+          <p class="chuck__text">
+            <img class="chuck__image" src="./img/chuck.png" alt="Chuck Norris" />
+            <img class="chuck__logo" src="./img/logo-dark.png" alt="logo" />
+            У нас феноменальный опыт в разработке сайтов любой сложности, но именно в лендингах мы видим самые высокие
+            показатели продаж для ваших продуктов. Лендинг это не только канал продаж одного товара или услуги, а
+            отличный способ собрать заявки и собрать целую базу клиентов, которые потом вернуться к вам снова.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale">
+      <h2 class="title sale__title">Закажите у нас <span class="accent">качественный лендинг</span></h2>
+      <div class="sale__inner container">
+        <div class="sale__price">
+          <p class="price__new">
+            цена:
+            <span>600$</span>
+          </p>
+          <p class="price__old"><s>900$</s> - ужасная расстраивающая людей наша старая цена</p>
+        </div>
+        <div class="sale__offer">
+          <p class="offer__key">Сделаем под ключ за 2 недели!</p>
+          <h3 class="offer__title">
+            И готовы приступить прямо сейчас
+            <span class="accent">Со скидкой</span>
+          </h3>
+          <p class="offer__discount">30%</p>
+          <p class="offer__date">Цена действительна до 31.12.2022</p>
+          <p>Начните зарабатывать с помощью наших<br />лендингов - <b>уже сейчас</b></p>
+        </div>
+        <form class="sale__form" action="#" method="POST">
+          <p>Введите ваше имя:</p>
+          <div class="form__group">
+            <label class="form__label" for="name">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="text" id="name" required placeholder="Евкакий Альбертович Шифутинский" />
+          </div>
+          <p>Введите ваш телефон:</p>
+          <div class="form__group">
+            <label class="form__label" for="phone">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="tel" id="phone" required placeholder="+38 (___) ___-__-__" />
+          </div>
+          <p>Введите вашу почту:</p>
+          <div class="form__group">
+            <label class="form__label" for="email">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="email" id="email" required placeholder="чётотам@четотам.com" />
+          </div>
+          <div class="form__group-button">
+            <button class="button__prime form__button" type="submit">
+              Заказать лендинг со скидкой
+              <svg class="order--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <span class="form__button-text">
+              <svg class="form__button-text--icon">
+                <use xlink:href="img/icons/sprite.svg#icon-clock"></use>
+              </svg>
+              Свяжемся с вами в ближайшее рабочее время
+            </span>
+          </div>
+        </form>
+        <img class="sale__bg sale__bg--cup" src="./img/cup.png" alt="cup" />
+        <img class="sale__bg sale__bg--mouse" src="./img/mouse.png" alt="mouse" />
+        <img class="sale__bg sale__bg--keyboard" src="./img/keyboard.png" alt="keyboard" />
+      </div>
+    </section>
+
+    <section class="clients" id="clients">
+      <div class="clients__inner container">
+        <div class="clients__image">
+          <img class="image__google" src="./img/goggle.gif" alt="google" />
+        </div>
+
+        <div class="clients__find">
+          <h2 class="title__second find__title">Как вы будете получать клиентов?</h2>
+
+          <p class="find__subtitle">Буквально в первые <b>24 часа</b> после<br />того как ваш сайт будет готов?</p>
+
+          <div class="find__searchbar">
+            <img class="searchbar__google-logo" src="./img/google-logo.png" alt="google-logo" width="50" />
+
+            <input class="searchbar__input" id="typed" type="text" spellcheck="false" />
+
+            <button type="submit" class="searchbar__btn" disabled>
+              <svg class="searchbar__btn-icon">
+                <use xlink:href="img\icons\sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+
+          <p>
+            <b>Благодаря системе Google ADWORDS</b> и грамотной настройке нашего SEO специалиста - ваш сайт будет на
+            первых строчках выдачи поисковика уже через несколько мгновений после настройки
+          </p>
+          <p>Отдыхайте, ваш сайт найдет вам клиентов автоматически!</p>
+
+          <button class="button__prime clients__button">Узнать подробнее</button>
+          <span>* C вами свяжется наш представитель<br />и расскажет об этапах работы над сайтом</span>
+
+          <img class="clients__bg clients__bg--sunglasses" src="./img/sunglasses.png" alt="sunglasses" />
+
+          <img class="clients__bg clients__bg--glass" src="./img/glass.PNG" alt="glass" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2 class="pricing__title">Сколько стоит ваш<br />лендинг пейдж:</h2>
+      <div class="pricing__inner container">
+        <img class="pricing__bg pricing__bg--pen-holder" src="./img/pen-holder.jpg" alt="" />
+
+        <img class="pricing__bg pricing__bg--camera" src="./img/camera.jpg" alt="" />
+
+        <ul class="price__promo">
+          <li class="promo__item">
+            <img src="./img/cat.JPG" alt="cat" />
+          </li>
+          <li class="promo__item">
+            <p>Углубленная аналитика и исследование бизнеса</p>
+            <div
+              class="tooltip"
+              data-tip="Собираем информацию о ЦА, продукте, конкурентах. Анализируем, находим весомые преимущества. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item">
+            <p>Создание шедевральной концепции (прототип сайта)</p>
+          </li>
+          <li class="promo__item">
+            <p>Разработка очень продающего дизайн макета</p>
+          </li>
+          <li class="promo__item">
+            <p>Адаптационная верстка</p>
+          </li>
+          <li class="promo__item">
+            <p>Интеграция веб-аналитики: цели, UTM-метки, реф хвосты</p>
+            <div
+              class="tooltip"
+              data-tip="Принимаем меры для естественного продвижения сайта в поисковой выдаче. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item">
+            <p>Внесение правок на любом этапе работы</p>
+            <div
+              class="tooltip"
+              data-tip="Принимаем меры для естественного продвижения сайта в поисковой выдаче. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item">
+            <p>Контроль каждого этапа работы специалистами</p>
+            <div
+              class="tooltip"
+              data-tip="Принимаем меры для естественного продвижения сайта в поисковой выдаче. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item">
+            <p>Внутрення SEO-оптимизаця</p>
+            <div
+              class="tooltip"
+              data-tip="Принимаем меры для естественного продвижения сайта в поисковой выдаче. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item">
+            <p>Мультилендинг и геотаргетинг (если нужно)</p>
+            <div
+              class="tooltip"
+              data-tip="Принимаем меры для естественного продвижения сайта в поисковой выдаче. Прописываем мета-теги, убираем дубли контента и т.д"
+            >
+              <svg class="price__icon promo__item-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-info-circle"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="promo__item mobile-hide">
+            <p class="promo__item-summary">Срок разработки:</p>
+          </li>
+          <li class="promo__item mobile-hide">
+            <p class="promo__item-summary">Цена разработки:</p>
+          </li>
+        </ul>
+
+        <ul class="price__discount">
+          <li class="discount__item-head">
+            <img class="discount__image" src="./img/garland.png" alt="garland" />
+            <h3 class="price__title price__title--discount">Акционный тариф</h3>
+            <p class="price__subtitle price__subtitle--discount">до 31 декабря 2022!</p>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <svg class="price__icon discount__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="discount__item mobile-hide">
+            <p class="price__subtitle"><b>до 14</b> рабочих дней</p>
+          </li>
+          <li class="discount__item">
+            <p class="price__title price__title--discount"><b>600$</b> (экономия <b>300$</b>)</p>
+          </li>
+          <li>
+            <button class="button__prime price__discount-btn">Заказать лендинг по акции</button>
+            <span class="order__text order__text--discount">* Ваши данные никогда не попадут к третьим лицам</span>
+            <img class="pricing__bg pricing__bg--apple-keyboard" src="./img/apple-keyboard.png" alt="" />
+          </li>
+        </ul>
+
+        <ul class="price__sad">
+          <li class="sad__item-head">
+            <h3 class="price__title price__title--sad">Обычный тариф</h3>
+            <p class="price__subtitle price__subtitle--sad">Грустный :(</p>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <svg class="price__icon sad__item-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-check"></use>
+            </svg>
+          </li>
+          <li class="sad__item">
+            <p class="price__subtitle"><b>до 14</b> рабочих дней</p>
+          </li>
+          <li class="sad__item">
+            <p class="price__title price__title--sad">900$</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secure" id="secure">
+      <div class="secure__inner container">
+        <div class="secure__image">
+          <img class="image__monitor" src="./img/monitor.png" alt="monitor" />
+          <img class="image__safe" src="./img/safe.gif" alt="safe" />
+        </div>
+
+        <div class="secure__safe">
+          <h2 class="title__second safe__title"><b>Безопасность</b> <br />работы и оплаты</h2>
+
+          <p class="safe__subtitle">Как происходит оплата работы?</p>
+
+          <p>
+            Не нужно напрямую отправлять нам какие либо задатки или полные оплаты, вы резервируете сумму на известных
+            сайтах которые предоставляют услугу безопасной сделки.
+            <b>Мы получим эти деньги, только после того как вы утвердите ваш готовый сайт</b>
+          </p>
+          <p class="safe__sample-text">
+            <b>Пример сайта с возможностью резервирования</b>
+            <svg class="safe__sample-text--icon">
+              <use xlink:href="img/icons/sprite.svg#icon-redo"></use>
+            </svg>
+          </p>
+
+          <a href="#" class="safe__link">
+            <svg class="safe__icon safe__icon--freelance">
+              <use xlink:href="img/icons/sprite.svg#icon-freelance"></use>
+            </svg>
+            <img src="./img/safe.jpg" alt="icon" />
+            <p>Сейф - Freelancehunt</p>
+
+            <svg class="safe__icon safe__icon--link"><use xlink:href="img/icons/sprite.svg#icon-link"></use></svg>
+          </a>
+
+          <span class="order__text order__text--safe">* Оплата за ваш заказ будет зарезервирована на сайте</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart">
+      <div class="chart__inner container">
+        <div class="chart__image">
+          <img class="image__monitor image__diagram" src="./img/chart.gif" alt="diagram" />
+        </div>
+
+        <div class="chart__content">
+          <h2 class="title__second content__title">Очень увеличим ваши продажи</h2>
+
+          <p>Оформите заявку и наш представитель свяжется с вами в ближайшее рабочее время</p>
+
+          <button class="button__prime chart__button">
+            Заказать лендинг со скидкой
+            <svg class="chart--btn-icon">
+              <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="title__second projects__title container">Наши последние проекты (портфолио):</h2>
+      <ul class="project__list">
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/1.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/2.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/3.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/4.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/5.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/6.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/7.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="project__item">
+          <img class="project__item-img" src="./img/projects/8.jpg" alt="project-image" />
+          <div class="project__item-content">
+            <p class="item-content__text">Лендинг по продаже товаров</p>
+            <a class="button__prime item-content__button" href="#"
+              >Подробнее о проекте
+              <svg class="chart--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <a class="button__prime project__button" href="#">Показать ещё </a>
+      <ul class="picker">
+        <li class="picker__circle"></li>
+        <li class="picker__circle"></li>
+        <li class="picker__circle"></li>
+      </ul>
+    </section>
+
+    <section class="reviews container" id="reviews">
+      <h2 class="title__second reviews__title">Отзывы клиентов</h2>
+      <p class="reviews__subtitle">Отзывы и благодарности о нашей работе</p>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+        <li class="reviews__item">
+          <img class="reviews__img" src="./img/reviews-blank.jpg" alt="blank" />
+        </li>
+      </ul>
+    </section>
+
+    <section class="questions container">
+      <div class="questions__block">
+        <div class="questions__block-content">
+          <h2 class="title__second questions__title">Остались вопросы?</h2>
+          <button class="button__prime questions__btn">Задать вопрос</button>
+        </div>
+        <div class="questions__block-image">
+          <img src="./img/questions1.png" alt="questions" />
+        </div>
+      </div>
+      <ul class="questions__list">
+        <li class="questions__item">
+          <h3 class="title__second questions__item-title">
+            Я нахожусь с вами не в одном городе, работа не будет долгой?
+          </h3>
+          <p class="questions__item-text">
+            Наоборот, мы всегда на связи и привыкли работать удаленно, поэтому работа будет выполнена в срок
+          </p>
+        </li>
+        <li class="questions__item">
+          <h3 class="title__second questions__item-title">
+            Я нахожусь с вами не в одном городе, работа не будет долгой?
+          </h3>
+          <p class="questions__item-text">
+            Наоборот, мы всегда на связи и привыкли работать удаленно, поэтому работа будет выполнена в срок
+          </p>
+        </li>
+        <li class="questions__item">
+          <h3 class="title__second questions__item-title">
+            Я нахожусь с вами не в одном городе, работа не будет долгой?
+          </h3>
+          <p class="questions__item-text">
+            Наоборот, мы всегда на связи и привыкли работать удаленно, поэтому работа будет выполнена в срок
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="land" id="land">
+      <svg class="land__icon">
+        <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+      </svg>
+
+      <fieldset class="land__content">
+        <legend class="land__content-title">Заказать лендинг</legend>
+
+        <p class="land__discount">
+          <span class="accent"
+            >Со скидкой!
+            <svg class="land__discount__icon">
+              <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </span>
+          30%
+        </p>
+
+        <form class="land__form" action="#" method="POST">
+          <p>Введите ваше имя:</p>
+          <div class="form__group">
+            <label class="form__label" for="name-2">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="text" id="name-2" required placeholder="Евкакий Альбертович Шифутинский" />
+          </div>
+          <p>Введите ваш телефон:</p>
+          <div class="form__group">
+            <label class="form__label" for="phone-2">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="tel" id="phone-2" required placeholder="+38 (___) ___-__-__" />
+          </div>
+          <p>Введите вашу почту:</p>
+          <div class="form__group">
+            <label class="form__label" for="email-2">
+              <svg class="form__icon">
+                <use xlink:href="img/icons/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <input class="form__input" type="email" id="email-2" required placeholder="чётотам@четотам.com" />
+          </div>
+          <div class="form__group-button">
+            <button class="button__prime form__button" type="submit">
+              Заказать лендинг со скидкой
+              <svg class="order--btn-icon">
+                <use xlink:href="img/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <span class="form__button-text">
+              <svg class="form__button-text--icon">
+                <use xlink:href="img/icons/sprite.svg#icon-clock"></use>
+              </svg>
+              Свяжемся с вами в ближайшее рабочее время
+            </span>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <footer class="footer container">
+      <p class="footer__text">Redline <span class="accent">Лендинг под ключ</span> с уникальным и продающим дизайном</p>
+      <div class="footer__inner container">
+        <a class="footer__logo" href="#">
+          <img class="logo__large" src="./img/logo-2.png" alt="logo" />
+        </a>
+
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="social__link" href="#">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                <path
+                  d="M20 0C8.963 0 0 8.963 0 20s8.963 20 20 20 20-8.963 20-20S31.037 0 20 0zm0 35.111C11.63 35.111 4.815 28.37 4.815 20A15.21 15.21 0 0 1 20 4.815 15.21 15.21 0 0 1 35.185 20C35.111 28.37 28.37 35.111 20 35.111z"
+                />
+                <path
+                  d="M17.556 22.889c1.407 1.259 3.481 1.259 4.815 0v-5.778c-1.407-1.259-3.482-1.259-4.815 0v5.778zm2.445-13.185c-2.741 0-5.333 1.111-7.259 3.037l3.407 3.407a5.41 5.41 0 0 1 7.704 0l3.407-3.407c-1.926-1.926-4.518-3.037-7.259-3.037z"
+                />
+                <path
+                  d="M23.852 23.852a5.41 5.41 0 0 1-7.704 0l-3.407 3.407c4 4 10.519 4 14.519 0l-3.407-3.407zM19.996 40c.148-2.37-1.259-4.519-3.556-5.259-5.926-1.482-10.37-6.296-11.333-12.296h10.074c-.815-1.556-.815-3.333 0-4.815H5.107c1.334-8.297 9.037-13.852 17.26-12.593a14.83 14.83 0 0 1 5.481 2c2.074 1.259 4.815.741 6.296-1.185-7.778-7.778-20.444-7.778-28.296 0s-7.852 20.444 0 28.296C9.626 37.852 14.663 40 19.996 40z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-callback">
+          <div class="footer-callback__number">
+            <svg class="icon callback__number--icon-mobile">
+              <use xlink:href="img/icons/sprite.svg#icon-mobile"></use>
+            </svg>
+            <a class="callback__number-phone" href="tel:+30732013063">+38 (073) 20-13-063</a>
+          </div>
+          <button class="button__alt">Заказать консультацию</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
